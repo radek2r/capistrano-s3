@@ -47,7 +47,7 @@ module Capistrano
             )
 
             if response&.successful?
-              File.open(LAST_INVALIDATION_FILE, "w") { |file| file.write(response[:invalidation][:id]) }
+              File.write(LAST_INVALIDATION_FILE, response[:invalidation][:id])
             end
           end
 

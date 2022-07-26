@@ -3,7 +3,6 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__) + "/lib")
 require "capistrano/s3/version"
 
-# rubocop:disable Metrics/BlockLength
 Gem::Specification.new do |s|
   s.authors = [
     "Jean-Philippe Doyle",
@@ -21,7 +20,6 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.files = `git ls-files`.split($OUTPUT_RECORD_SEPARATOR)
   s.executables = s.files.grep(%r{^bin/}).map { |f| File.basename(f) }
-  s.test_files = s.files.grep(%r{^(test|spec|features)/})
   s.name = "capistrano-s3"
   s.require_paths = ["lib"]
   s.version = Capistrano::S3::VERSION
@@ -35,5 +33,5 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency "aws-sdk",    "~> 2.6"
   s.add_runtime_dependency "capistrano", ">= 2"
   s.add_runtime_dependency "mime-types"
+  s.metadata["rubygems_mfa_required"] = "true"
 end
-# rubocop:enable Metrics/BlockLength
