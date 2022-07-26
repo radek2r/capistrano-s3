@@ -2,8 +2,8 @@
 
 > Enables static websites deployment to Amazon S3 website buckets using Capistrano.
 
-[![Build Status](https://travis-ci.org/capistrano-s3/capistrano-s3.svg?branch=master)](https://travis-ci.org/capistrano-s3/capistrano-s3)
-[![Maintainability](https://api.codeclimate.com/v1/badges/b0e4fbd956233a7849ba/maintainability)](https://codeclimate.com/github/capistrano-s3/capistrano-s3/maintainability)
+[![Build Status](https://img.shields.io/github/workflow/status/capistrano-s3/capistrano-s3/build.svg)](https://github.com/capistrano-s3/capistrano-s3/actions/workflows/build.yml)
+[![Maintainability](https://img.shields.io/codeclimate/maintainability/capistrano-s3/capistrano-s3.svg)](https://codeclimate.com/github/capistrano-s3/capistrano-s3/maintainability)
 [![Gem Version](https://img.shields.io/gem/v/capistrano-s3.svg)](https://rubygems.org/gems/capistrano-s3)
 
 ## Hosting your website with Amazon S3
