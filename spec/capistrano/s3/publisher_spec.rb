@@ -193,7 +193,7 @@ describe Capistrano::S3::Publisher do
     context "with MIME types" do
       it "sets best match MIME type by default" do
         Aws::S3::Client.any_instance.expects(:put_object).with do |options|
-          options[:content_type] == "application/ecmascript"
+          options[:content_type] == "application/javascript"
         end.once
         described_class.publish!("s3.amazonaws.com", "abc", "123", "mybucket.amazonaws.com",
                                  "spec/sample-mime", "", "cf123", [], [], false, {}, "staging")
