@@ -30,8 +30,8 @@ Gem::Specification.new do |s|
   s.required_ruby_version = ">= 2.5.0"
 
   # Gem dependencies
-  s.add_runtime_dependency "aws-sdk",    "~> 2.6"
-  s.add_runtime_dependency "capistrano", ">= 2"
+  s.add_runtime_dependency "aws-sdk",    "~> 3.0"
+  s.add_runtime_dependency "capistrano", ">= 3"
   s.add_runtime_dependency "mime-types"
   s.add_runtime_dependency "webrick" # Temporary, while 'aws-sdk' is < 3.0
 
